@@ -1,0 +1,68 @@
+
+.header {
+  position: relative;
+  min-height: 100vh;
+  padding-left: 0px;
+
+  h1, h2, h3, h4, h5, a, p{
+    color: $light-gray;
+  }
+
+  h1, {
+    font-size: 20px;
+    padding: 0px 0;
+  }
+
+  h2, {
+    font-size: 16px;
+    padding: 0px 0;
+  }
+}
+
+.inner {
+ position: absolute;
+ top: 40px;
+ right: 40px;
+}
+
+@media screen and (max-width: 768px) {
+.inner {
+    height:150px;
+    position:absolute;
+    width:150px;
+    left:50%;
+    text-align: center;
+    margin-left:-75px;
+  }
+}
+
+.footer {
+ position: absolute;
+ bottom: 10px;
+ right: 40px;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+.footer-links a {
+  color: $light-gray;
+  opacity: 0.55;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0px 10px;
+}
+.footer-links a:hover {
+  opacity: 1;
+}
+
+
+.profile {
+  border-radius: 50px;
+  height: 100px;
+  width: 100px;
+}
+
+
+
