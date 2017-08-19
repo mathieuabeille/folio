@@ -3,7 +3,7 @@ title: Mathieu Abeille's personal page
 ---
 
 <div class="page">
-  <div class="header" style="background: linear-gradient(-225deg, rgba(100,101,168,0.6) 0%, rgba(0,36,61,0.6) 10%), url('<%= image_path("background.jpg") %>');">
+  <div class="header" style="background: linear-gradient(-225deg, rgba(100,101,168,0.6) 0%, rgba(0,36,61,0.6) 10%), url('<%= image_path("background.jpg") %>');padding-top: 50px;">
     <div>
       <div class="header-main">
         <%= image_tag 'profil.jpg', class: "profile" %>
@@ -28,9 +28,10 @@ title: Mathieu Abeille's personal page
     <div class="section">
       <p> <a href='/folio/francais.html'><%= image_tag 'france.png', align:"right", class:"flag" %></a>
 <div class="container1">
-      <p>Having completed a Bachelor of Business Administration in Canada in Marketing, I worked few years as a creative (french copywriter) for several advertising agencies. I have realized the importance of strengthening my profile with technical skills. This is the reason why I decided to attend the coding bootcamp "The Wagon".</p>
-</div>
+      <p>Having completed a Bachelor of Business Administration in Canada in Marketing, I worked few years as a creative (french copywriter) for several advertising agencies. I have realized the importance of strengthening my profile with technical skills. This is the reason why I decided to attend the coding bootcamp "The Wagon".</p><br/>
+
       <a href="https://www.docdroid.net/ax8XMYA/cv-2017-france.pdf" class="btn-medium">Curriculum Vitae</a>
+    </div>
     </div>
 <div class="border"></div>
     <section id="skills">
@@ -53,29 +54,78 @@ title: Mathieu Abeille's personal page
 
 <div class="border"></div>
 <section id="projects">
-<div class="section">
+  <div class="section">
+    <h2>Projects</h2>
 
-        <h2>Projects</h2>
 
-          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path 'bookastage.png' %>');">
-            <div class="card-category">11th of august 2017</div>
-            <div class="card-description">
-              <h2>Book a stage</h2>
-              <p>A marketplace that helps artists to organize shows. http://bookastage.herokuapp.com</p>
-            </div>
-            <img class="card-user" src="<%= image_path "book-logo.png" %>">
-            <a class="card-link" href="http://bookastage.herokuapp.com/" ></a>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-4">
+      <!-- insert <div class="card"> -->
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/shanghai');">
+        <div class="card-category">Popular</div>
+          <div class="card-description">
+            <h2>Le Wagon Shanghai</h2>
+            <p>Very cool city, the best</p>
+          </div>
+        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
+        <a class="card-link" href="#" ></a>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+      <!-- insert <div class="card"> -->
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/shanghai');">
+        <div class="card-category">Popular</div>
+          <div class="card-description">
+            <h2>Le Wagon Shanghai</h2>
+            <p>Very cool city, the best</p>
+          </div>
+        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
+        <a class="card-link" href="#" ></a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-4">
+      <!-- insert <div class="card"> -->
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/shanghai');">
+        <div class="card-category">Popular</div>
+          <div class="card-description">
+            <h2>Le Wagon Shanghai</h2>
+            <p>Very cool city, the best</p>
+          </div>
+        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
+        <a class="card-link" href="#" ></a>
+      </div>
 
-        </div></div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!--       <div class="card" >
+        <div class="card-image-book">
+          <div class="card-category">
+            11th of august 2017
+          </div>
+          <img class="card-user" src="<%= image_path "book-logo.png" %>">
+        </div>
+      <div class="description">
+          <h2>Book a stage</h2>
+          <p>A marketplace that helps artists to organize shows. http://bookastage.herokuapp.com</p>
+      </div>
+  </div> -->
 </section>
 
 <div class="border"></div>
 <section id="contact">
-<div class="section">
+  <div class="section">
+    <h2>Contact me</h2>
           <div class="container">
             <div class="row">
-              <div class="col-sm-6">
-                <h2>Contact me</h2>
+              <div class="col-sm-4">
                   <form method="POST" action="http://formspree.io/mathieu.abeille@gmail.com">
                     <input class="form-control" type="email" name="email" placeholder="Your email"><br/>
                     <textarea class="form-control" style="height: 100px;" name="message" placeholder="Your message"></textarea>
@@ -83,13 +133,15 @@ title: Mathieu Abeille's personal page
                   </form>
               </div>
                <div class="col-sm-3 text-center">
-<br/><br/>
-                <p> <i class="fa fa-envelope" aria-hidden="true"></i> <br/>mathieu.abeille@gmail.com</p>
-                <p> <i class="fa fa-phone" aria-hidden="true"></i><br/>Canada : +1 514 691 5161</p>
-                <p> <i class="fa fa-phone" aria-hidden="true"></i><br/>France : +33 06 30 89 08 88</p>
+                <p> <i class="fa fa-envelope" aria-hidden="true"></i><br/> mathieu.abeille@gmail.com</p>
+                <p> <i class="fa fa-phone" aria-hidden="true"></i></p>
+                <p> Canada : +1 514 691 5161</p>
+                <p>  France: +33 06 30 89 08 88</p>
               </div>
           </div>
-      </div>      </div></section>
+      </div>
+    </div>
+  </section>
 </div>
 
 

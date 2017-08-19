@@ -1,17 +1,15 @@
 .card {
-  height: 250px;
-  width: 400px;
+  height: 175px;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
   background-size: cover !important;
   background-position: center;
   color: white;
   position: relative;
-  h1, h2, h3, h4, p{
+  margin-top: 10px;
+  h2, p {
     color: white;
   }
 }
-
-
 .card-user {
   position: absolute;
   right: 10px;
@@ -28,7 +26,7 @@
 }
 .card-description {
   position: absolute;
-  bottom: -5px;
+  bottom: 10px;
   left: 10px;
 }
 .card-description h2 {
@@ -51,14 +49,4 @@
 }
 .card-link:hover {
   opacity: 0.1;
-}
-
-.flag {
-  color: $gray;
-  opacity: 0.6;
-}
-
-.flag:hover {
-  color: $gray;
-  opacity: 1;
 }
