@@ -31,7 +31,7 @@ title: Mathieu Abeille - portfolio personnel
 <div class="container1">
       <p>Diplômé d'une majeure en Marketing d'une école de management au Canada, j'ai travaillé plusieurs années comme créatif (concepteur-rédacteur) en agence de publicité. J'ai réalisé l'importance de renforcer mon profil avec des compétences techniques. C'est pour cette raison que j'ai suivi le bootcamp de programmation Le Wagon.</p></div>
 
-      <a href="https://www.docdroid.net/ax8XMYA/cv-2017-france.pdf" class="btn-medium">Curriculum Vitae</a>
+      <a href="https://www.docdroid.net/ax8XMYA/cv-2017-france.pdf" class="btn-medium" target="_blank">Curriculum Vitae</a>
     </div>
 
     <section id="skills">
@@ -53,20 +53,66 @@ title: Mathieu Abeille - portfolio personnel
       </section>
 
 <section id="projects">
-<div class="section">
+  <div class="section">
+    <h2>Projects</h2>
 
-        <h2>Projets</h2>
 
-          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path 'bookastage.png' %>');">
-            <div class="card-category">11 août 2017</div>
-            <div class="card-description">
-              <h2>Book a stage</h2>
-              <p>Une marketplace qui permet aux artistes de réserver des scènes. http://bookastage.herokuapp.com</p>
-            </div>
-            <img class="card-user" src="<%= image_path "book-logo.png" %>">
-            <a class="card-link" href="http://bookastage.herokuapp.com/" ></a>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-4">
+      <!-- insert <div class="card"> -->
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path 'melomelo.png' %>');">
+        <div class="card-category">August 19th</div>
+          <div class="card-description">
+            <h2>Melomelo</h2>
+            <p>Un outil pour faire des achats de vêtements en ligne.</p>
+          </div>
+        <a class="card-link" href="https://melomelo.herokuapp.com" ></a>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+      <!-- insert <div class="card"> -->
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path 'bookastage.png' %>');">
+        <div class="card-category">August 12th</div>
+          <div class="card-description">
+            <h2>Bookastage</h2>
+            <p>A marketplace that helps artists and managers.</p>
+          </div>
+        <a class="card-link" href="https://bookastage.herokuapp.com" ></a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-4">
+      <!-- insert <div class="card"> -->
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path 'cocktail.png' %>');">
+        <div class="card-category">August 1st</div>
+          <div class="card-description">
+            <h2>Mr Cocktail</h2>
+            <p>Un livre de cocktail - projet du Wagon</p>
+          </div>
+        <a class="card-link" href="https://abeille-mr-cocktail.herokuapp.com" ></a>
+      </div>
 
-        </div></div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!--       <div class="card" >
+        <div class="card-image-book">
+          <div class="card-category">
+            11th of august 2017
+          </div>
+          <img class="card-user" src="<%= image_path "book-logo.png" %>">
+        </div>
+      <div class="description">
+          <h2>Book a stage</h2>
+          <p>A marketplace that helps artists to organize shows. http://bookastage.herokuapp.com</p>
+      </div>
+  </div> -->
 </section>
 
 
