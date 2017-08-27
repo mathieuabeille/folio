@@ -8,21 +8,20 @@
 }
 
 .container1 {
-  padding-top: 20px;
+  padding-top: 40px;
   padding-left: 0px;
   padding-bottom: 30px;
-  padding-right: 60px;
+  padding-right: 0px;
 
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
 .container1 {
-  padding-top: 20px;
+  padding-top: 40px;
   padding-left: 0px;
   padding-bottom: 30px;
-  padding-right: 60px;
-  text-align: center;
+  padding-right: 0px;
 }
 }
 
@@ -47,7 +46,7 @@ border-style: solid none none none;
   margin-top: 30px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
   .section {
     padding: 40px 40px;
     position: block;

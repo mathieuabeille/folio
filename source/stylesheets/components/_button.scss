@@ -12,3 +12,25 @@
   text-decoration: none;
   color: $gray-title;
 }
+
+@media screen and (max-width: 770px) {
+.send{
+    display: block;
+    margin-top: 15px;
+    margin: auto;
+    background-color: snow;
+    /* padding-top: 10
+    /* float: right; */
+}
+}
+
+.send{
+    display: block;
+    margin-top: 15px;
+    background-color: snow;
+    /* padding-top: 10px; */
+
+    /* float: right; */
+
+}
+
